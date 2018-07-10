@@ -4,7 +4,7 @@ Repositório com exemplos de integração com as APIs da SOHTEC
 Veja abaixo exemplos de integração.
 
 # Login
-https://sohtec.com.br/services/api/Login
+Url: https://sohtec.com.br/services/api/login
 
 Enviar o json abaixo:
 
@@ -19,5 +19,34 @@ Você receberá um retorno de um token, ele tem validade de 10 minutos a partir 
     "token": "xxxxxxxxxxxxxxxxx"
 }
 ```
+# Carregar clientes
+Url: https://sohtec.com.br/services/api/getclients
+
+Enviar no Heder da chamada os seguintes parametros:
+```
+Content-Type: application/json
+Authorization: Bearer AQUI_VAI_O_TOKEN
+```
+Você receberá como retorno um array com os dados dos clientes que se cadastraram ou utilizaram a plataforma de um determinado cliente.
+Exemplo de retorno:
+```
+{
+    "Code": 0,
+    "Message": "OK",
+    "Data": [
+        {
+            "Email": "fulano@xxxxxx.com",
+            "Nome": "Fulano",
+            "Telefone": "99 9 9999-9999"
+        },
+        {
+            "Email": "siclano@xxxxxx.com",
+            "Nome": "Siclano",
+            "Telefone": "99 9 9999-9999"
+        }
+    ]
+}
+```
+
 
 
