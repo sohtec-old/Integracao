@@ -22,7 +22,7 @@ Você receberá um retorno de um token, ele tem validade de 10 minutos a partir 
 ### Carregar clientes
 Url: https://sohtec.com.br/services/api/getclients
 
-Enviar no Header da chamada os seguintes parametros:
+Enviar no **Header** da chamada os seguintes parametros:
 ```javascript {.line-numbers}
 Content-Type: application/json
 Authorization: Bearer AQUI_VAI_O_TOKEN
