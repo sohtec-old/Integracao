@@ -8,13 +8,13 @@ Url: https://sohtec.com.br/services/api/login
 
 Enviar o json abaixo:
 
-```
+```javascript
 {
   "key":"KEY_DO_CLIENTE"
 }
 ```
 Você receberá um retorno de um token, ele tem validade de 10 minutos a partir da obtenção do mesmo, ou seja, sempre que for necessário repita a chamada no Login para renovar o token.
-```
+```javascript
 {
     "token": "xxxxxxxxxxxxxxxxx"
 }
@@ -29,7 +29,7 @@ Authorization: Bearer AQUI_VAI_O_TOKEN
 ```
 Você receberá como retorno um array com os dados dos clientes que se cadastraram ou utilizaram a plataforma de um determinado cliente.
 Exemplo de retorno:
-```
+```javascript
 {
     "Code": 0,
     "Message": "OK",
