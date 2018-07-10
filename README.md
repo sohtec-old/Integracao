@@ -12,7 +12,7 @@ Enviar o json abaixo:
 }
 ```
 
-Você receberá um retorno de um token, ele tem validade de 10 minutos a partir da obtenção do mesmo, ou seja, sempre que for necessário repita a chamada no Login para renovar o token.
+Você receberá um retorno de um token, ele tem validade de **10 minutos** a partir da obtenção do mesmo, ou seja, sempre que for necessário repita a chamada no Login para renovar o token.
 ```javascript {.line-numbers}
 {
     "token": "xxxxxxxxxxxxxxxxx"
@@ -47,7 +47,49 @@ Exemplo de retorno:
     ]
 }
 ```
+### Carregar Agendas de Visitas a Imóveis
+Url: https://sohtec.com.br/services/api/getschedule
 
+Enviar no **Header** da chamada os seguintes parametros:
+```javascript {.line-numbers}
+Content-Type: application/json
+Authorization: Bearer AQUI_VAI_O_TOKEN
+```
+Você receberá como retorno um array com os dados das visitas dos clientes que fizeram um agendamento para visitar um imóvel de um determinado cliente.
+Exemplo de retorno:
+```javascript {.line-numbers}
+{
+    "Code": 0,
+    "Message": "OK",
+    "Data": [
+        {
+            "Id": 0,
+            "EmpresaId": 0,
+            "EmpresaNome": "",
+            "ClienteEmail": "",
+            "ImovelId": "0",
+            "ImovelUrl": "",
+            "ImovelEndereco": "",
+            "ImovelDormitorios": 0,
+            "ImovelVagas": 1,
+            "ImovelCep": "",
+            "ImovelNumero": "0",
+            "ImovelComplemento": "",
+            "ImovelBairro": "",
+            "ImovelCidade": "",
+            "ImovelEstado": "",
+            "ImovelAluguel": 0,
+            "ImovelCondominio": 0,
+            "ImovelIptu": 0,
+            "Confirmada": true,
+            "Cancelada": false,
+            "StatusId": 4,
+            "DataAgendamento": "2018-06-13T10:45:00",            
+            "VisitaAcampanhada": false
+        }
+    ]
+}
+```
 
 
 
