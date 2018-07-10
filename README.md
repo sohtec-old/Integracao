@@ -5,6 +5,8 @@ Veja abaixo exemplos de integração.
 ### Login
 Url: https://sohtec.com.br/services/api/login
 
+Com a **chave(key)** do cliente fornecida pela SOHTEC siga os passos abaixo.
+
 Enviar o json abaixo:
 ```javascript {.line-numbers}
 {
