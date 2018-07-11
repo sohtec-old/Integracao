@@ -92,6 +92,26 @@ Exemplo de retorno:
     ]
 }
 ```
+### Carregar dados de usuáros de locações efetuadas
+Url: https://sohtec.com.br/services/api/getlocations
 
+Enviar no **Header** da chamada os seguintes parametros:
+```javascript {.line-numbers}
+Content-Type: application/json
+Authorization: Bearer AQUI_VAI_O_TOKEN
+```
+Você receberá como retorno arrays agrupados por tipos de garantia de imóveis com status de **locado**.
+Exemplo de retorno:
+```javascript {.line-numbers}
+{
+    "Code": 0,
+    "Message": "OK",
+    "Data": {
+        "Fianca": [],
+        "Titulo": [],
+        "Fiador": []
+    }
+}
+```
 
 
