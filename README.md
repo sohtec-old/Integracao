@@ -113,5 +113,34 @@ Exemplo de retorno:
     }
 }
 ```
+### Carregar Garantias
+Url: https://sohtec.com.br/services/api/getassurances
 
+Enviar no **Header** da chamada os seguintes parametros:
+```javascript {.line-numbers}
+Content-Type: application/json
+Authorization: Bearer AQUI_VAI_O_TOKEN
+```
+Você receberá como retorno um array de garantias de imóveis aceitas pela SOHTEC.
+Exemplo de retorno:
+```javascript {.line-numbers}
+{
+    "Code": 0,
+    "Message": "OK",
+    "Data": [
+        {
+            "Id": 3,
+            "Nome": "Fiador"
+        },
+        {
+            "Id": 1,
+            "Nome": "Seguro Fiança"
+        },
+        {
+            "Id": 2,
+            "Nome": "Título de Capitalização"
+        }
+    ]
+}
+```
 
