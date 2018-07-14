@@ -7,6 +7,11 @@ Url: https://sohtec.com.br/services/api/login
 
 Com a **chave(key)** do cliente fornecida pela SOHTEC siga os passos abaixo.
 
+Enviar no **Header** da chamada os seguintes parametros:
+```javascript {.line-numbers}
+Content-Type: application/json
+```
+
 Enviar o json abaixo:
 ```javascript {.line-numbers}
 {
@@ -139,6 +144,39 @@ Exemplo de retorno:
         {
             "Id": 2,
             "Nome": "Título de Capitalização"
+        }
+    ]
+}
+```
+### Carregar Empresas
+Url: https://sohtec.com.br/services/api/getcompanies
+
+Com a **chave(key)** do **parceiro** fornecida pela SOHTEC siga os passos abaixo.
+
+Enviar no **Header** da chamada os seguintes parametros:
+```javascript {.line-numbers}
+Content-Type: application/json
+```
+
+Enviar o json abaixo:
+```javascript {.line-numbers}
+{
+  "key":"KEY_DO_PARCEIRO"
+}
+```
+
+Você receberá como retorno um array de empresas.<br>
+Exemplo de retorno:
+```javascript {.line-numbers}
+{
+    "Code": 0,
+    "Message": "OK",
+    "Data": [
+        {
+            "Id": 0,
+            "Nome": "",
+            "Chave": "",
+            "ParceiroCodigoAuxiliar": ""
         }
     ]
 }
