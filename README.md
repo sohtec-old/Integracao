@@ -182,3 +182,28 @@ Exemplo de retorno:
 }
 ```
 
+### Bloquear data para visitação de um imóvel dentro da plataforma SOHTEC.
+Url: https://sohtec.com.br/services/api/BlockScheduling
+
+Enviar no **Header** da chamada os seguintes parametros:
+```javascript {.line-numbers}
+Content-Type: application/json
+Authorization: Bearer AQUI_VAI_O_TOKEN
+```
+Enviar o json abaixo:
+```javascript {.line-numbers}
+{	
+	"PropertyCode" : "CODIGO_DO_IMOVEL",
+	"DateHour" : "2018-08-01 10:00" //A data seve ser enviada no formato (yyyy-MM-dd HH:mm)
+}
+```
+
+Se os dados estiverem ok o sistema retornará o seguinte JSON.
+Exemplo de retorno:
+```javascript {.line-numbers}
+{
+    "Code": 0,
+    "Message": "OK",
+    "Data": null
+}
+```
