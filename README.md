@@ -207,3 +207,29 @@ Exemplo de retorno:
     "Data": null
 }
 ```
+
+### Indicar uma preferência de um imóvel.
+Url: https://sohtec.com.br/services/api/SetPreference
+
+Enviar no **Header** da chamada os seguintes parametros:
+```javascript {.line-numbers}
+Content-Type: application/json
+Authorization: Bearer AQUI_VAI_O_TOKEN
+```
+Enviar o json abaixo:
+```javascript {.line-numbers}
+{
+	"PropertyCode" : "CODIGO_DO_IMOVEL",
+	"ValidateDate" : "2018-09-01 10:00" //Informe a data limite em que a mensagem de prefência do imóvel deve aparecer na plataforma SOH.
+}
+```
+
+Se os dados estiverem ok o sistema retornará o seguinte JSON.
+Exemplo de retorno:
+```javascript {.line-numbers}
+{
+    "Code": 0,
+    "Message": "OK",
+    "Data": null
+}
+```
