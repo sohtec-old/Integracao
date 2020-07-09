@@ -3,7 +3,7 @@ Repositório com exemplos de integração com as APIs da SOHTEC.
 Veja abaixo exemplos de integração.
 
 ### Login
-Url: https://sohtec.com.br/services/api/login
+Url: https://sohtec.com.br/services/api/Login
 
 Com a **chave(key)** do cliente fornecida pela SOHTEC siga os passos abaixo.
 
@@ -27,7 +27,7 @@ Você receberá um retorno de um token, ele tem validade de **10 minutos** a par
 ```
 
 ### Carregar clientes
-Url: https://sohtec.com.br/services/api/getclients
+Url: https://sohtec.com.br/services/api/GetClients
 
 Enviar no **Header** da chamada os seguintes parametros:
 ```javascript {.line-numbers}
@@ -55,7 +55,7 @@ Exemplo de retorno:
 }
 ```
 ### Carregar Agendas de Visitas a Imóveis
-Url: https://sohtec.com.br/services/api/getschedule
+Url: https://sohtec.com.br/services/api/GetSchedule
 
 Enviar no **Header** da chamada os seguintes parametros:
 ```javascript {.line-numbers}
@@ -98,7 +98,7 @@ Exemplo de retorno:
 }
 ```
 ### Carregar dados de usuáros de locações efetuadas
-Url: https://sohtec.com.br/services/api/getlocations
+Url: https://sohtec.com.br/services/api/GetLocations
 
 Enviar no **Header** da chamada os seguintes parametros:
 ```javascript {.line-numbers}
@@ -119,7 +119,7 @@ Exemplo de retorno:
 }
 ```
 ### Carregar Garantias
-Url: https://sohtec.com.br/services/api/getassurances
+Url: https://sohtec.com.br/services/api/GetAssurances
 
 Enviar no **Header** da chamada os seguintes parametros:
 ```javascript {.line-numbers}
@@ -149,7 +149,7 @@ Exemplo de retorno:
 }
 ```
 ### Carregar Empresas
-Url: https://sohtec.com.br/services/api/getcompanies
+Url: https://sohtec.com.br/services/api/GetCompanies
 
 Com a **chave(key)** do **parceiro** fornecida pela SOHTEC siga os passos abaixo.
 
@@ -231,5 +231,24 @@ Exemplo de retorno:
     "Code": 0,
     "Message": "OK",
     "Data": null
+}
+```
+
+
+### Obter url para acessar área administrativa 
+Url: https://sohtec.com.br/services/api/GetUrlAccess
+
+Enviar no **Header** da chamada os seguintes parametros:
+```javascript {.line-numbers}
+Content-Type: application/json
+Authorization: Bearer AQUI_VAI_O_TOKEN
+```
+Você receberá como retorno uma url com um validade de utilização de 24h.
+Exemplo de retorno:
+```javascript {.line-numbers}
+{
+    "Code": 0,
+    "Message": "OK",
+    "Data": "https://imob.sohtec.com.br/redir?hash=uasx9cr9Uo2jdSQCoL5pXfgnj9Q2%2fD4KJWei9oTU5vFQpix6G%2b5%2fEg%3d%3d"
 }
 ```
