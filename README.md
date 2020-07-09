@@ -1,3 +1,17 @@
+ ## Serviços de Integração ##
+
+
+1. [Login](#login)
+2. [Carregar Clientes](#carregar-clientes)
+3. [Carregar Agendas de Visitas a Imóveis](#carregar-agendas-de-visitas-a-imóveis)
+4. [Carregar dados de usuários de locações efetuadas](#carregar-dados-de-usuários-de-locações-efetuadas)
+5. [Carregar Garantias](#carregar-garantias)
+6. [Carregar Empresas](#carregar-empresas)
+7. [Bloquear data para visitação de um imóvel dentro da plataforma SOHTEC](#bloquear-data-para-visitação-de-um-imóvel-dentro-da-plataforma-sohtec)
+8. [Indicar uma preferência de um imóvel](#indicar-uma-preferência-de-um-imóvel)
+9. [Obter url para acessar área administrativa](#obter-url-para-acessar-área-administrativa)
+
+
 ## Integração
 Repositório com exemplos de integração com as APIs da SOHTEC.
 Veja abaixo exemplos de integração.
@@ -9,6 +23,7 @@ Com a **chave(key)** do cliente fornecida pela SOHTEC siga os passos abaixo.
 
 Enviar no **Header** da chamada os seguintes parametros:
 ```javascript {.line-numbers}
+HTTP Verb: POST
 Content-Type: application/json
 ```
 
@@ -26,11 +41,12 @@ Você receberá um retorno de um token, ele tem validade de **10 minutos** a par
 }
 ```
 
-### Carregar clientes
+### Carregar Clientes
 Url: https://sohtec.com.br/services/api/GetClients
 
 Enviar no **Header** da chamada os seguintes parametros:
 ```javascript {.line-numbers}
+HTTP Verb: POST
 Content-Type: application/json
 Authorization: Bearer AQUI_VAI_O_TOKEN
 ```
@@ -59,6 +75,7 @@ Url: https://sohtec.com.br/services/api/GetSchedule
 
 Enviar no **Header** da chamada os seguintes parametros:
 ```javascript {.line-numbers}
+HTTP Verb: POST
 Content-Type: application/json
 Authorization: Bearer AQUI_VAI_O_TOKEN
 ```
@@ -97,11 +114,12 @@ Exemplo de retorno:
     ]
 }
 ```
-### Carregar dados de usuáros de locações efetuadas
+### Carregar dados de usuários de locações efetuadas
 Url: https://sohtec.com.br/services/api/GetLocations
 
 Enviar no **Header** da chamada os seguintes parametros:
 ```javascript {.line-numbers}
+HTTP Verb: POST
 Content-Type: application/json
 Authorization: Bearer AQUI_VAI_O_TOKEN
 ```
@@ -123,6 +141,7 @@ Url: https://sohtec.com.br/services/api/GetAssurances
 
 Enviar no **Header** da chamada os seguintes parametros:
 ```javascript {.line-numbers}
+HTTP Verb: POST
 Content-Type: application/json
 Authorization: Bearer AQUI_VAI_O_TOKEN
 ```
@@ -155,7 +174,9 @@ Com a **chave(key)** do **parceiro** fornecida pela SOHTEC siga os passos abaixo
 
 Enviar no **Header** da chamada os seguintes parametros:
 ```javascript {.line-numbers}
+HTTP Verb: POST
 Content-Type: application/json
+Authorization: Bearer AQUI_VAI_O_TOKEN
 ```
 
 Enviar o json abaixo:
@@ -187,6 +208,7 @@ Url: https://sohtec.com.br/services/api/BlockScheduling
 
 Enviar no **Header** da chamada os seguintes parametros:
 ```javascript {.line-numbers}
+HTTP Verb: POST
 Content-Type: application/json
 Authorization: Bearer AQUI_VAI_O_TOKEN
 ```
@@ -213,6 +235,7 @@ Url: https://sohtec.com.br/services/api/SetPreference
 
 Enviar no **Header** da chamada os seguintes parametros:
 ```javascript {.line-numbers}
+HTTP Verb: POST
 Content-Type: application/json
 Authorization: Bearer AQUI_VAI_O_TOKEN
 ```
@@ -239,10 +262,22 @@ Exemplo de retorno:
 Url: https://sohtec.com.br/services/api/GetUrlAccess
 
 Enviar no **Header** da chamada os seguintes parametros:
+
 ```javascript {.line-numbers}
+HTTP Verb: POST
 Content-Type: application/json
 Authorization: Bearer AQUI_VAI_O_TOKEN
 ```
+
+Enviar o json abaixo:
+```javascript {.line-numbers}
+{	
+	"email" : "EMAIL_DO_USUARIO",
+	"senha" : "SENHA_DO_USUARIO",
+	"empresaid" : "CODIGO_DA_EMPRESA"
+}
+```
+
 Você receberá como retorno uma url com um validade de utilização de 24h.
 Exemplo de retorno:
 ```javascript {.line-numbers}
