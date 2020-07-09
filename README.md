@@ -278,7 +278,7 @@ Enviar o json abaixo:
 }
 ```
 
-Você receberá como retorno uma url com um validade de utilização de 24h.
+Você receberá como retorno uma url com um validade de utilização de 2h.
 Exemplo de retorno:
 ```javascript {.line-numbers}
 {
