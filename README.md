@@ -273,8 +273,7 @@ Enviar o json abaixo:
 ```javascript {.line-numbers}
 {	
 	"email" : "EMAIL_DO_USUARIO",
-	"senha" : "SENHA_DO_USUARIO",
-	"empresaid" : "CODIGO_DA_EMPRESA"
+	"senha" : "SENHA_DO_USUARIO"
 }
 ```
 
