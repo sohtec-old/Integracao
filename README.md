@@ -5,11 +5,12 @@
 2. [Carregar Clientes](#carregar-clientes)
 3. [Carregar Agendas de Visitas a Imóveis](#carregar-agendas-de-visitas-a-imóveis)
 4. [Carregar dados de usuários das modalidades de garantia](#carregar-dados-de-usuários-das-modalidades-de-garantia)
-5. [Carregar Garantias](#carregar-garantias)
-6. [Carregar Empresas](#carregar-empresas)
-7. [Bloquear data para visitação de um imóvel dentro da plataforma SOHTEC](#bloquear-data-para-visitação-de-um-imóvel-dentro-da-plataforma-sohtec)
-8. [Indicar uma preferência de um imóvel](#indicar-uma-preferência-de-um-imóvel)
-9. [Obter url para acessar área administrativa](#obter-url-para-acessar-área-administrativa)
+5. [Carregar dados de usuários das modalidades de garantia](carregar-dados-de-usuários-das-modalidades-de-garantia)
+6. [Carregar Garantias](#carregar-garantias)
+7. [Carregar Empresas](#carregar-empresas)
+8. [Bloquear data para visitação de um imóvel dentro da plataforma SOHTEC](#bloquear-data-para-visitação-de-um-imóvel-dentro-da-plataforma-sohtec)
+9. [Indicar uma preferência de um imóvel](#indicar-uma-preferência-de-um-imóvel)
+10. [Obter url para acessar área administrativa](#obter-url-para-acessar-área-administrativa)
 
 
 ## Integração
@@ -137,6 +138,36 @@ Exemplo de retorno:
     }
 }
 ```
+
+### Carregar dados de usuários das modalidades de garantia
+Url: https://sohtec.com.br/services/api/CarregarDadosClienteGarantia
+
+Enviar no **Header** da chamada os seguintes parametros:
+```javascript {.line-numbers}
+HTTP Verb: POST
+Content-Type: application/json
+Authorization: Bearer AQUI_VAI_O_TOKEN
+```
+Enviar via **POST** no **BODY** o json abaixo:
+```javascript {.line-numbers}
+{
+    "Email" : "xxxxx@xxxxxx.com", //Email do cliente
+    "CodigoImovel" : "0002",
+    "Garantia" : "FIANCA" //FIANCA|FIADOR|TITULO|CAUCAO
+}
+```
+Você receberá como retorno na propriedade **Data** a estrutura JSON da garantia solicitada.
+Exemplo de retorno:
+```javascript {.line-numbers}
+{
+    "Code": 0,
+    "Message": "OK",
+    "Data": {
+        //Estrutura JSON da garantia
+    }
+}
+```
+
 ### Carregar Garantias
 Url: https://sohtec.com.br/services/api/GetAssurances
 
