@@ -4,7 +4,7 @@
 1. [Login](#login)
 2. [Carregar Clientes](#carregar-clientes)
 3. [Carregar Agendas de Visitas a Imóveis](#carregar-agendas-de-visitas-a-imóveis)
-4. [Carregar dados de usuários de locações efetuadas](#carregar-dados-de-usuários-de-locações-efetuadas)
+4. [Carregar dados de usuários das modalidades de garantia](#carregar-dados-de-usuários-das-modalidades-de-garantia)
 5. [Carregar Garantias](#carregar-garantias)
 6. [Carregar Empresas](#carregar-empresas)
 7. [Bloquear data para visitação de um imóvel dentro da plataforma SOHTEC](#bloquear-data-para-visitação-de-um-imóvel-dentro-da-plataforma-sohtec)
@@ -114,7 +114,7 @@ Exemplo de retorno:
     ]
 }
 ```
-### Carregar dados de usuários de locações efetuadas
+### Carregar dados de usuários das modalidades de garantia
 Url: https://sohtec.com.br/services/api/GetLocations
 
 Enviar no **Header** da chamada os seguintes parametros:
