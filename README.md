@@ -5,7 +5,7 @@
 2. [Carregar Clientes](#carregar-clientes)
 3. [Carregar Agendas de Visitas a Imóveis](#carregar-agendas-de-visitas-a-imóveis)
 4. [Carregar dados de usuários das modalidades de garantia](#carregar-dados-de-usuários-das-modalidades-de-garantia)
-5. [Carregar dados de usuários das modalidades de garantia](carregar-dados-de-usuários-das-modalidades-de-garantia)
+5. [Carregar dados de garantia de um usuário](#carregar-dados-de-garantia-de-um-usuário)
 6. [Carregar Garantias](#carregar-garantias)
 7. [Carregar Empresas](#carregar-empresas)
 8. [Bloquear data para visitação de um imóvel dentro da plataforma SOHTEC](#bloquear-data-para-visitação-de-um-imóvel-dentro-da-plataforma-sohtec)
@@ -139,7 +139,7 @@ Exemplo de retorno:
 }
 ```
 
-### Carregar dados de usuários das modalidades de garantia
+### Carregar dados de garantia de um usuário
 Url: https://sohtec.com.br/services/api/CarregarDadosClienteGarantia
 
 Enviar no **Header** da chamada os seguintes parametros:
