@@ -132,6 +132,7 @@ Exemplo de retorno:
     "Data": {
         "Fianca": [],
         "Titulo": [],
+	"Caucao": [],
         "Fiador": []
     }
 }
