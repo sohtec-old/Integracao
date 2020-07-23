@@ -153,7 +153,7 @@ Enviar via **POST** no **BODY** o json abaixo:
 {
     "Email" : "xxxxx@xxxxxx.com", //Email do cliente
     "CodigoImovel" : "0002",
-    "Garantia" : "FIANCA" //FIANCA|FIADOR|TITULO|CAUCAO
+    "Garantia" : "FIANCA" //FIANCA|FIADOR|TITULO|CAUCAO|CREDPAGO
 }
 ```
 Você receberá como retorno na propriedade **Data** a estrutura JSON da garantia solicitada.
