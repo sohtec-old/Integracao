@@ -51,6 +51,13 @@ HTTP Verb: POST
 Content-Type: application/json
 Authorization: Bearer AQUI_VAI_O_TOKEN
 ```
+Enviar via **POST** no **BODY** o json abaixo:
+```javascript {.line-numbers}
+{
+    "DataInicio" : "10/10/2019",
+    "DataFim" : "10/11/2019"    
+}
+```
 Você receberá como retorno um array com os dados dos clientes que se cadastraram ou utilizaram a plataforma de um determinado cliente.
 Exemplo de retorno:
 ```javascript {.line-numbers}
@@ -80,6 +87,15 @@ HTTP Verb: POST
 Content-Type: application/json
 Authorization: Bearer AQUI_VAI_O_TOKEN
 ```
+
+Enviar via **POST** no **BODY** o json abaixo:
+```javascript {.line-numbers}
+{
+    "DataInicio" : "10/10/2019",
+    "DataFim" : "10/11/2019"    
+}
+```
+
 Você receberá como retorno um array com os dados das visitas dos clientes que fizeram um agendamento para visitar um imóvel de um determinado cliente.
 Exemplo de retorno:
 ```javascript {.line-numbers}
