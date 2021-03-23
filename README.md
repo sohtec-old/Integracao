@@ -55,9 +55,19 @@ Enviar via **POST** no **BODY** o json abaixo:
 ```javascript {.line-numbers}
 {
     "DataInicio" : "10/10/2019",
-    "DataFim" : "10/11/2019"    
+    "DataFim" : "10/11/2019"
 }
 ```
+
+OU
+
+Enviar via **POST** no **BODY** o json abaixo:
+```javascript {.line-numbers}
+{    
+    "Email" : "fulano@dominio.com"
+}
+```
+
 Você receberá como retorno um array com os dados dos clientes que se cadastraram ou utilizaram a plataforma de um determinado cliente.
 Exemplo de retorno:
 ```javascript {.line-numbers}
@@ -140,6 +150,15 @@ HTTP Verb: POST
 Content-Type: application/json
 Authorization: Bearer AQUI_VAI_O_TOKEN
 ```
+
+Enviar via **POST** no **BODY** o json abaixo:
+```javascript {.line-numbers}
+{
+    "DataInicio" : "10/10/2019",
+    "DataFim" : "10/11/2019"
+}
+```
+
 Você receberá como retorno arrays agrupados por tipos de garantia de imóveis com status de **locado**.
 Exemplo de retorno:
 ```javascript {.line-numbers}
