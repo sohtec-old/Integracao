@@ -11,6 +11,7 @@
 8. [Bloquear data para visitação de um imóvel dentro da plataforma SOHTEC](#bloquear-data-para-visitação-de-um-imóvel-dentro-da-plataforma-sohtec)
 9. [Indicar uma preferência de um imóvel](#indicar-uma-preferência-de-um-imóvel)
 10. [Obter url para acessar área administrativa](#obter-url-para-acessar-área-administrativa)
+11. [Inserir um Lead](#inserir-um-lead)
 
 
 ## Integração
@@ -351,5 +352,39 @@ Exemplo de retorno:
     "Code": 0,
     "Message": "OK",
     "Data": "https://imob.sohtec.com.br/redir?hash=uasx9cr9Uo2jdSQCoL5pXfgnj9Q2%2fD4KJWei9oTU5vFQpix6G%2b5%2fEg%3d%3d"
+}
+```
+
+### Inserir um Lead
+Url: https://sohtec.com.br/services/api/AddLead
+
+Enviar no **Header** da chamada os seguintes parametros:
+
+```javascript {.line-numbers}
+HTTP Verb: POST
+Content-Type: application/json
+Authorization: Bearer AQUI_VAI_O_TOKEN
+```
+
+Enviar o json abaixo:
+```javascript {.line-numbers}
+{	
+	"ClienteEmail" : "",
+	"ClienteNome" : "",
+	"ClienteTelefone" : "",
+	"ImovelCodigo" : "",
+	"ClienteNome" : "",
+	"Modulo" : "",
+	"ClienteMensagem" : ""
+}
+```
+
+Se os dados estiverem ok o sistema retornará o seguinte JSON.
+Exemplo de retorno:
+```javascript {.line-numbers}
+{
+    "Code": 0,
+    "Message": "OK",
+    "Data": null
 }
 ```
