@@ -374,7 +374,7 @@ Enviar o json abaixo:
 	"ClienteTelefone" : "",
 	"ImovelCodigo" : "",
 	"ClienteNome" : "",
-	"Modulo" : "",
+	"Modulo" : "", //LOCACAO ou VENDAS
 	"ClienteMensagem" : ""
 }
 ```
