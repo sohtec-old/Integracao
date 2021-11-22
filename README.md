@@ -375,9 +375,57 @@ Enviar o json abaixo:
 	"ImovelCodigo" : "",
 	"ClienteNome" : "",
 	"Modulo" : "", //LOCACAO ou VENDAS
-	"ClienteMensagem" : ""
+	"ClienteMensagem" : "",
+	"CorretorEmail" : "",
+	"Midia":""// Veja lista de mídias abaixo
 }
 ```
+
+
+**Mídias**
+AGENTE_IMOVEIS
+ATTRIA
+AVALIACAO
+CAPTACAO_LOCACAO
+CAPTACAO_VENDAS
+CASAMINEIRA
+CHAT
+CHAVES_NA_MAO
+DREAMCASA
+EI_IMOVEIS
+EMAIL_MKT
+FACEBOOK
+GOOGLE
+I123
+IMOVELWEB
+IMOVMAP
+INDICACAO
+INDICACAO_CONDOMINIO
+INDICACAO_CREDPAGO
+INDICACAO_LOCACAO
+INSTAGRAM
+LIGACAO
+LINKEDIN
+LOJA
+MERCADO_LIVRE
+NET_IMOVEIS
+OLX
+OUTROS
+PARCERIA
+PASSAGEM
+PLACA
+PORTAL_MEGA_REDE
+RDSTATION
+RECEPCAO
+REDES_SOCIAIS
+RGI
+SITE
+START
+TIKTOK
+TV
+VIVAREAL
+WHATSAPP
+ZAP
 
 Se os dados estiverem ok o sistema retornará o seguinte JSON.
 Exemplo de retorno:
