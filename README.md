@@ -384,21 +384,13 @@ Enviar o json abaixo:
 
 **Mídias**
 AGENTE_IMOVEIS
-
 ATTRIA
-
 AVALIACAO
-
 CAPTACAO_LOCACAO
-
 CAPTACAO_VENDAS
-
 CASAMINEIRA
-
 CHAT
-
 CHAVES_NA_MAO
-
 DREAMCASA
 EI_IMOVEIS
 EMAIL_MKT
@@ -434,6 +426,7 @@ TV
 VIVAREAL
 WHATSAPP
 ZAP
+
 
 Se os dados estiverem ok o sistema retornará o seguinte JSON.
 Exemplo de retorno:
