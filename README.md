@@ -143,7 +143,7 @@ Exemplo de retorno:
 ```
 ### Carregar dados de usuários das modalidades de garantia
 
-Passe junto da url o CODIGO_DA_FICHA que deseja carregar os dados.
+Passe junto da url o CODIGO_DA_FICHA gerado pela sistema da SOHTEC.
 
 Url: https://api.sohtec.com.br/CarregaFicha/CODIGO_DA_FICHA
 
