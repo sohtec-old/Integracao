@@ -154,14 +154,18 @@ Content-Type: application/json
 Authorization: Bearer AQUI_VAI_O_TOKEN
 ```
 
-Você receberá como retorno arrays agrupados por tipos de garantia de imóveis com status de **locado**.
-Exemplo de retorno:
+Resposta:
 ```javascript {.line-numbers}
 {
     "Code": 0,
     "Message": "OK",
     "Data": {
-    	...
+    	"Id": 6240,
+        "TipoPessoa": "PF",
+        "ClienteEmail": "le.fonseca@gmail.com",
+        "ClienteNome": "LEANDRO SOHTEC",
+        "DataCadastro": "2021-12-22T16:40:17.513",
+	...
     }
 }
 ```
