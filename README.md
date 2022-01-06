@@ -143,21 +143,16 @@ Exemplo de retorno:
 }
 ```
 ### Carregar dados de usuários das modalidades de garantia
-Url: https://sohtec.com.br/services/api/GetLocations
+
+Passe junto da url o CODIGO_DA_FICHA que deseja carregar os dados.
+
+Url: https://api.sohtec.com.br/CarregaFicha/CODIGO_DA_FICHA
 
 Enviar no **Header** da chamada os seguintes parametros:
 ```javascript {.line-numbers}
 HTTP Verb: POST
 Content-Type: application/json
 Authorization: Bearer AQUI_VAI_O_TOKEN
-```
-
-Enviar via **POST** no **BODY** o json abaixo:
-```javascript {.line-numbers}
-{
-    "DataInicio" : "10/10/2019",
-    "DataFim" : "10/11/2019"
-}
 ```
 
 Você receberá como retorno arrays agrupados por tipos de garantia de imóveis com status de **locado**.
@@ -167,10 +162,7 @@ Exemplo de retorno:
     "Code": 0,
     "Message": "OK",
     "Data": {
-        "Fianca": [],
-        "Titulo": [],
-	"Caucao": [],
-        "Fiador": []
+    	...
     }
 }
 ```
