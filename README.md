@@ -350,6 +350,7 @@ Enviar o json abaixo:
 
 **Mídias**
 - AGENTE_IMOVEIS
+- ARBO
 - ATTRIA
 - AVALIACAO
 - CAPTACAO_LOCACAO
@@ -373,6 +374,7 @@ Enviar o json abaixo:
 - LIGACAO
 - LINKEDIN
 - LOJA
+- MEGAREDE
 - MERCADO_LIVRE
 - NET_IMOVEIS
 - OLX
