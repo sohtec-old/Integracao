@@ -350,6 +350,7 @@ Enviar o json abaixo:
 
 **Mídias**
 - AGENTE_IMOVEIS
+- APTO_VC
 - ARBO
 - ATTRIA
 - AVALIACAO
@@ -365,6 +366,7 @@ Enviar o json abaixo:
 - FACEBOOK
 - GOOGLE
 - I123
+- IMOVEL_K
 - IMOVELWEB
 - IMOVMAP
 - INDICACAO
@@ -377,6 +379,7 @@ Enviar o json abaixo:
 - LOJA
 - MEGAREDE
 - MERCADO_LIVRE
+- MEU_IMOVEL
 - NET_IMOVEIS
 - OLX
 - OUTROS
