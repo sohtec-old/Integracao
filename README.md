@@ -398,6 +398,7 @@ Enviar o json abaixo:
 - VIVAREAL
 - WHATSAPP
 - ZAP
+- CASAFY
 
 
 Se os dados estiverem ok o sistema retornará o seguinte JSON.
